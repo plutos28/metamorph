@@ -680,3 +680,29 @@ video {
 .hover\:fill-cyan-700:hover {
   fill: #0e7490;
 }
+
+@media (min-width: 768px) {
+  .md\:w-1\/5 {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-3\/6 {
+    width: 50%;
+  }
+
+  .lg\:w-1\/5 {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:w-3\/6 {
+    width: 50%;
+  }
+
+  .xl\:w-1\/6 {
+    width: 16.666667%;
+  }
+}
