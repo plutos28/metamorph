@@ -47,17 +47,33 @@
             </div>
             
             <!-- Stat Cards -->
-            <div class="rounded-xl border shadow w-90 overflow-hidden">
-                <div class="flex justify-between p-6">
-                    <svg class="w-10 h-10 rounded-xl flex items-center justify-center bg-violet-100 text-violet-700 -rotate-6" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M237.57,133.77l-32-80h0a6,6,0,0,0-6.86-3.63L134,64.52V40a6,6,0,0,0-12,0V67.19l-67.3,15a6,6,0,0,0-4.27,3.63h0v0l-32,80A6.1,6.1,0,0,0,18,168c0,21.86,23.31,30,38,30s38-8.14,38-30a6.1,6.1,0,0,0-.43-2.23L64.19,92.33,122,79.48V210H104a6,6,0,0,0,0,12h48a6,6,0,0,0,0-12H134V76.81l56.21-12.49-27.78,69.45A6.1,6.1,0,0,0,162,136c0,21.86,23.31,30,38,30s38-8.14,38-30A6.1,6.1,0,0,0,237.57,133.77ZM56,186a36.89,36.89,0,0,1-17.48-4.56c-5.37-3.13-8.15-7.18-8.49-12.37l26-64.91,26,64.91C81.06,182.85,62.58,186,56,186Zm144-32a36.89,36.89,0,0,1-17.48-4.56c-5.37-3.13-8.15-7.18-8.49-12.37l26-64.91,26,64.91C225.06,150.85,206.58,154,200,154Z"></path></svg>
-                    <!-- <svg class="w-10 h-10 rounded-xl flex items-center justify-center bg-violet-100 text-violet-700 -rotate-6" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"></path></svg> -->
-                    <button class="whitespace-nowrap inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground px-4 py-2 h-9 text-sm">Record</button>
+            <div class="flex space-x-8">
+                <!-- weight -->
+                <div class="rounded-xl border shadow w-96 overflow-hidden">
+                    <div class="flex justify-between p-6">
+                        <svg class="w-14 h-14 fill-violet-700 p-2 rounded-xl flex items-center justify-center bg-violet-100 -rotate-6" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M237.57,133.77l-32-80h0a6,6,0,0,0-6.86-3.63L134,64.52V40a6,6,0,0,0-12,0V67.19l-67.3,15a6,6,0,0,0-4.27,3.63h0v0l-32,80A6.1,6.1,0,0,0,18,168c0,21.86,23.31,30,38,30s38-8.14,38-30a6.1,6.1,0,0,0-.43-2.23L64.19,92.33,122,79.48V210H104a6,6,0,0,0,0,12h48a6,6,0,0,0,0-12H134V76.81l56.21-12.49-27.78,69.45A6.1,6.1,0,0,0,162,136c0,21.86,23.31,30,38,30s38-8.14,38-30A6.1,6.1,0,0,0,237.57,133.77ZM56,186a36.89,36.89,0,0,1-17.48-4.56c-5.37-3.13-8.15-7.18-8.49-12.37l26-64.91,26,64.91C81.06,182.85,62.58,186,56,186Zm144-32a36.89,36.89,0,0,1-17.48-4.56c-5.37-3.13-8.15-7.18-8.49-12.37l26-64.91,26,64.91C225.06,150.85,206.58,154,200,154Z"></path></svg>
+                        <!-- <svg class="w-10 h-10 rounded-xl flex items-center justify-center bg-violet-100 text-violet-700 -rotate-6" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"></path></svg> -->
+                        <button class="whitespace-nowrap inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground px-4 py-2 h-9 text-sm">Record</button>
+                    </div>
+                    <div class="p-6 pt-0 mb-6 space-y-1">
+                        <p class="text-sm text-gray-500 font-medium">Current Weight(last recorded on 15/3/2024)</p>
+                        <h1 class="font-semibold text-4xl">75.5 kg</h1>
+                    </div>
                 </div>
-                <div class="p-6 pt-0 mb-6 space-y-1">
-                    <p class="text-sm text-gray-500 font-medium">Current Weight(last recorded on 15/3/2024)</p>
-                    <h1 class="font-semibold text-4xl">75.5 kg</h1>
+
+                <div class="rounded-xl border shadow w-96 overflow-hidden">
+                    <div class="flex justify-between p-6">
+                        <svg class="w-14 h-14 fill-violet-700 p-2 rounded-xl flex items-center justify-center bg-violet-100 -rotate-6" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M185,60.67C167.18,34,145.87,18,128,18S88.82,34,71,60.67C52.57,88.32,42,121.61,42,152a86,86,0,0,0,172,0C214,121.61,203.43,88.32,185,60.67ZM128,226a74.09,74.09,0,0,1-74-74c0-28.08,9.84-58.94,27-84.67C96.11,44.65,114.56,30,128,30c10.52,0,24.12,9,36.78,23.77L123.52,100a6,6,0,0,0,3,9.82L153,116.43l-6.87,34.39a6,6,0,0,0,4.7,7.06A6.08,6.08,0,0,0,152,158a6,6,0,0,0,5.87-4.82l8-40a6,6,0,0,0-4.42-7l-22.37-5.59,33.2-37.2q1.36,1.92,2.72,3.94c17.15,25.73,27,56.59,27,84.67A74.09,74.09,0,0,1,128,226Z"></path></svg>
+                        <!-- <svg class="w-10 h-10 rounded-xl flex items-center justify-center bg-violet-100 text-violet-700 -rotate-6" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z"></path></svg> -->
+                        <button class="whitespace-nowrap inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground px-4 py-2 h-9 text-sm">Record</button>
+                    </div>
+                    <div class="p-6 pt-0 mb-6 space-y-1">
+                        <p class="text-sm text-gray-500 font-medium">Breakfast</p>
+                        <h1 class="font-semibold text-4xl">200 Calories</h1>
+                    </div>
                 </div>
             </div>
+            
         </section>
     </main>
 </body>
